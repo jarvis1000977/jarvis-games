@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Rock Paper Scissors</title> 
+        <link rel="stylesheet" href="style.css">
+        <script src="logic.js"></script>
+    </head>
+
+    <body>
+        <h1 id="opponent-score">0</h1>
+        <img id="opponent-choice">
+        <br>
+        <img id="your-choice">
+        <div id="choices">
+        </div>
+        <h1 id="your-score">0</h1>
+    </body>
+    <script type="module">
+        // Import the functions you need from the SDKs you need
+        import { initializeApp } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-app.js";
+        import { getAnalytics } from "https://www.gstatic.com/firebasejs/11.1.0/firebase-analytics.js";
+        // TODO: Add SDKs for Firebase products that you want to use
+        // https://firebase.google.com/docs/web/setup#available-libraries
+      
+        // Your web app's Firebase configuration
+        // For Firebase JS SDK v7.20.0 and later, measurementId is optional
+        const firebaseConfig = {
+          apiKey: "AIzaSyCLjxaWH-CVC7W8MCwPC4DQ9fdS6-FFoTc",
+          authDomain: "rock-jay.firebaseapp.com",
+          projectId: "rock-jay",
+          storageBucket: "rock-jay.firebasestorage.app",
+          messagingSenderId: "285467816022",
+          appId: "1:285467816022:web:b633a36d09614693af8bf7",
+          measurementId: "G-Y0PV726NK8"
+        };
+      
+        // Initialize Firebase
+        const app = initializeApp(firebaseConfig);
+        const analytics = getAnalytics(app);
+      </script>
+</html>
